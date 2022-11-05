@@ -1,0 +1,51 @@
+.hero {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-image: var(--bg-gradient), url(../images/fon-hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: var(--bg-gradient), url(../images/fon-hero-mobile-2x.jpg);
+  }
+  @include tablet {
+    background-image: var(--bg-gradient), url(../images/fon-hero-tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: var(--bg-gradient),
+        url(../images/fon-hero-tablet-2x.jpg);
+    }
+  }
+  @include desktop {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: var(--bg-gradient), url(../images/fon-hero-desk.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: var(--bg-gradient), url(../images/fon-hero-desk-2x.jpg);
+    }
+  }
+}
+
+.hero__title {
+  margin: 0 auto 30px auto;
+  max-width: 360px;
+  @include font(900, 20, 1.62, 0.06);
+  text-transform: uppercase;
+  color: var(--second-text-color);
+  @include mobile {
+    font-size: 26px;
+  }
+  @include desktop {
+    @include font(900, 44, 1.36, 0.06);
+    max-width: 696px;
+  }
+}
