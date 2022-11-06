@@ -13,7 +13,7 @@
     (min-resolution: 2dppx) {
     background-image: var(--bg-gradient), url(../images/fon-hero-mobile-2x.jpg);
   }
-  @include tablet {
+  @include mobile {
     background-image: var(--bg-gradient), url(../images/fon-hero-tablet.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -22,7 +22,7 @@
         url(../images/fon-hero-tablet-2x.jpg);
     }
   }
-  @include desktop {
+  @include tablet {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
