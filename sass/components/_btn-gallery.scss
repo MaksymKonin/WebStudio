@@ -1,4 +1,7 @@
 .gallery-items__btn {
+  @media screen and (max-width: 380px) {
+    padding: 6px 15px;
+  }
   padding: 6px 22px;
   font-family: inherit;
   @include font(500, 16, 1.62, 0.03);
